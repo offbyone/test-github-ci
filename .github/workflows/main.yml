@@ -3,9 +3,9 @@ name: build
 on: [push, pull_request]
 
 env:
-	  # color output for Pytest
-	  PYTEST_ADDOPTS: "--color=yes"
-	  PY_COLORS: 1
+    # color output for Pytest
+    PYTEST_ADDOPTS: "--color=yes"
+    PY_COLORS: 1
 
 jobs:
   test:
