@@ -1,6 +1,6 @@
 [tool.poetry]
 name = "test-github-ci"
-version = "0.0.2"
+version = "0.0.3"
 description = "This project tests AutoPub with GitHub Actions CI."
 authors = ["BotPub <botpub@autopub.rocks>"]
 readme = "README.md"
