@@ -1,6 +1,11 @@
 CHANGELOG
 =========
 
+0.0.5 - 2023-06-07
+------------------
+
+Use correct PyPI token in Deployment environment
+
 0.0.4 - 2023-06-07
 ------------------
 
