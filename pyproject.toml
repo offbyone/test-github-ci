@@ -2,7 +2,7 @@
 name = "test-github-ci"
 version = "0.0.5"
 description = "This project tests AutoPub with GitHub Actions CI."
-authors = ["BotPub <botpub@autopub.rocks>"]
+authors = ["BotPub <52496925+botpub@users.noreply.github.com>"]
 readme = "README.md"
 
 [tool.poetry.dependencies]
@@ -18,7 +18,7 @@ say-hello = "test_github_ci.hello:hello"
 [tool.autopub]
 project-name = "TestProj"
 git-username = "botpub"
-git-email = "botpub@autopub.rocks"
+git-email = "52496925+botpub@users.noreply.github.com"
 version-strings = ["test_github_ci/__init__.py"]
 
 [build-system]
