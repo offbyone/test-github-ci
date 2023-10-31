@@ -1,6 +1,11 @@
 CHANGELOG
 =========
 
+0.0.7 - 2023-10-31
+------------------
+
+Test release - verifying the token permissions
+
 0.0.5 - 2023-06-07
 ------------------
 
