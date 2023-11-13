@@ -75,10 +75,21 @@ jobs:
            https://api.github.com/repos/${{ github.repository }}/releases \
             -d '{"tag_name":"v1.0.${{ github.run_number }}","target_commitish":"main","name":"v1.0.${{ github.run_number }}","body":"Description of the release","draft":false,"prerelease":false,"generate_release_notes":false}'
 
+      - name: yo ssh me
+        uses: lhotari/action-upterm@v1
+        with:
+          limit-access-to-actor: true
+          limit-access-to-users: offbyone
+        env:
+          GITHUB_TOKEN: ${{ secrets.GH_PAT }}
+          REAL_GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+          PYPI_PASSWORD: ${{ secrets.PYPI_PASSWORD }}
+
       - name: Publish
         if: ${{ steps.check_release.outputs.release=='' }}
         env:
           GITHUB_TOKEN: ${{ secrets.GH_PAT }}
+          REAL_GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
           PYPI_PASSWORD: ${{ secrets.PYPI_PASSWORD }}
         run: |
           autopub prepare
